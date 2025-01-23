@@ -1,14 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogPost from '../components/BlogPost.astro';
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 const pageTitle = "She Blogs";
 ---
 <BaseLayout pageTitle={pageTitle}>
   <h2>About Tech, about innovation, about Female leaders</h2>
 
   <ul>
-	<li><a href="/posts/post-1/">Women Transitioning into Tech: A Journey into Product Management</a></li>
-	<li><a href="/posts/post-2/">The AI Revolution: Why Companies Need Fresh Perspectives</a></li>
-	<li><a href="/posts/post-3/">Must-Know Tools for Every Product Manager: AI and Beyond</a></li>
+	{allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
   </ul>
 </BaseLayout>
 
