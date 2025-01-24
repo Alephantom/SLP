@@ -1,10 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
 const pageTitle = "She Leads Product";
 ---
 <BaseLayout pageTitle={pageTitle}>
   <h2>A Community for Product Managers</h2>
+
   <p>We aim to inspire and empower each other to grow in our careers while making a meaningful impact in the tech industry. Whether you're just starting out or a seasoned expert, She Leads Product is here to support your journey.</p>
   <h2>The future of Tech is Female</h2>
   <p>Welcome to a space where we celebrate 💪 resilience, 🤝 collaboration, and 🎯 achieving your goals. Together, we grow 🌱 and shine ✨!</p>
+  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 </BaseLayout>
