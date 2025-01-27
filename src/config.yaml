@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: She Leads Product
+  site: 'https://sheleadsproduct.tech'
   base: '/'
   trailingSlash: false
 
@@ -9,16 +9,15 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: She Leads Product
+  description: "A community of junior and senior product managers to share knowledge, experiences, and grow together."
   robots:
     index: true
     follow: true
   openGraph:
     site_name: AstroWind
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/8652549.jpg'
         width: 1200
         height: 628
     type: website
