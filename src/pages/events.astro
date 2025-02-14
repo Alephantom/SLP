@@ -1,82 +1,50 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
-
 // import Features2 from '~/components/widgets/Features2.astro';
+// import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+// import Stats from '~/components/widgets/Stats.astro';
+// import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Contact',
+  title: 'About us',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
+  <!-- Hero Widget ******************* -->
 
-  <HeroText tagline="Contact" title="Drop us a message today!" />
+  <Hero
+    tagline="Save the date"
+  
+  >
+    <Fragment slot="title">
+      Thursday, February 27 | 8 PM <br />
+      <span class="text-accent dark:text-white highlight"> SLP February Meet-up</span>
+    </Fragment>
 
-  <ContactUs
-    id="form"
-    title="We value your input and appreciate your contribution."
-    subtitle="If you have ideas, feedback, or want to collaborate, we’d love to hear from you!,"
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
-      },
-    ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
+    <Fragment slot="subtitle">
+      Join us for the next SheLeadsProduct.tech Round Table—a space for women in product to connect, learn, and grow together! 🚀 This month, we’ll dive into key challenges, share insights, and hear from inspiring PMs. Whether you’re breaking into product or leveling up, join the conversation!
+    <br >
+    <br >
+    <a
+      href="https://lu.ma/event/evt-npDKm1Kf3fvg7aE"
+      class="luma-checkout--button"
+      data-luma-action="checkout"
+      data-luma-event-id="evt-npDKm1Kf3fvg7aE"
+    >
+      Register for Event
+    </a>
+    
+    <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+  </Fragment>
+      </Hero>
+  
 
-    description="Our team will review your message and get back to you as soon as possible. Thank you for reaching out!"
-  />
 
-  <!-- Features2 Widget 
+  <!-- Stats Widget ****************** -->
 
-  <Features2
-    title="We are here to help!"
-    items={[
-      {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
-      },
-      {
-        title: 'Contact sales',
-        description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
-      },
-      {
-        title: 'Technical support',
-        description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-      },
-      {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
-        icon: 'tabler:headset',
-      },
-      {
-        title: 'Email',
-        description: 'contact@support.com',
-        icon: 'tabler:mail',
-      },
-      {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
-        icon: 'tabler:map-pin',
-      },
-    ]}
-  />
-  ************** -->
+
+
+
 </Layout>
