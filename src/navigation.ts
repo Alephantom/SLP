@@ -1,12 +1,13 @@
-import { getPermalink, getBlogPermalink, 
+import { getPermalink, 
+// getBlogPermalink, 
   // getAsset 
 } from './utils/permalinks';
 
 export const headerData = {
   links: [
-    // {
-    //   text: 'Home',
-    //   href: '#',
+    {
+      text: 'Home',
+      href: '#',
     //   // links: [
     //   //   {
     //   //     text: 'SaaS',
@@ -25,7 +26,7 @@ export const headerData = {
     //   //     href: getPermalink('/homes/personal'),
     //   //   },
     //   // ],
-    // },
+    },
     // {
     //   text: 'About',
     //   links: [
@@ -77,43 +78,44 @@ export const headerData = {
 
 
     {
-      text: 'Projects',
-      links: [
-        {
-          text: 'What do we do?',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Product Management Bootcamp',
-          href: getPermalink('/category/projects-pm-bootcamp'),
-        },
-      ],
-    },
-    {
-      text: 'Blog',
-      href: getBlogPermalink(),
+      text: 'About',
+      href: getPermalink('/about'),
       // links: [
       //   {
-      //     text: 'Blog List',
-      //     href: getBlogPermalink(),
-      //   },
-
-      //   {
-      //     text: 'Category Page',
-      //     href: getPermalink('tutorials', 'category'),
+      //     text: 'What do we do?',
+      //     href: getPermalink('/about'),
       //   },
       //   {
-      //     text: 'Tag Page',
-      //     href: getPermalink('astro', 'tag'),
+      //     text: 'Product Management Bootcamp',
+      //     href: getPermalink('/category/projects-pm-bootcamp'),
       //   },
       // ],
     },
+    // {
+    //   text: 'Blog',
+    //   href: getBlogPermalink(),
+    //   // links: [
+    //   //   {
+    //   //     text: 'Blog List',
+    //   //     href: getBlogPermalink(),
+    //   //   },
+
+    //   //   {
+    //   //     text: 'Category Page',
+    //   //     href: getPermalink('tutorials', 'category'),
+    //   //   },
+    //   //   {
+    //   //     text: 'Tag Page',
+    //   //     href: getPermalink('astro', 'tag'),
+    //   //   },
+    //   // ],
+    // },
 
     
-    // {
-    //   text: 'Contact',
-    //   href: getPermalink('/contact'),   
-    // },
+    {
+      text: 'Contact',
+      href: getPermalink('/contact'),   
+    },
 
 
 

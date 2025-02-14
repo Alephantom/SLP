@@ -1,224 +1,82 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import Prices from '~/components/widgets/Pricing.astro';
-// import FAQs from '~/components/widgets/FAQs.astro';
-// import Steps from '~/components/widgets/Steps.astro';
-// import Features3 from '~/components/widgets/Features3.astro';
-// import CallToAction from '~/components/widgets/CallToAction.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+
+// import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
-  title: 'Events',
+  title: 'Contact',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- HeroText Widget  -->
+  <!-- HeroText Widget ******************* -->
 
-  <HeroText
-    tagline="Connect and Grow"
-    title="She Leads Product - Monthly Meetup"
-    subtitle="Join us for our monthly meetups to connect with like-minded professionals, learn from industry experts, and grow your network. Our events are designed to inspire, educate, and empower."
-  />
+  <HeroText tagline="Contact" title="Drop us a message today!" />
 
-  <!-- Pricing Widget   ******************* -->
-
-  <Prices
-    title="SLP - Monthly Meetup"
-    subtitle="Don't forgete the date"
-    prices={[
+  <ContactUs
+    id="form"
+    title="We value your input and appreciate your contribution."
+    subtitle="If you have ideas, feedback, or want to collaborate, we’d love to hear from you!,"
+    inputs={[
       {
-        title: 'February',
-        subtitle: 'Spotlight Stories & Connect',
-        price: 1,
-        period: 'what to expect:',
-        items: [
-    { description: 'One PM shares their career journey and lessons.' },
-    { description: 'Follow with a brief AMA for open Q&A.' },
-    { description: 'Inspires and connects across different seniority levels.' },
-    { description: 'Inclusive platform for all PMs to learn and share.' },
-    { description: 'Facilitates personal connection and networking.' },
-    { description: 'Builds a strong sense of PM community.' },
-  ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
-        },
-        hasRibbon: true,
-        ribbonTitle: 'upcoming',
+        type: 'text',
+        name: 'name',
+        label: 'Name',
       },
       {
-        title: 'March 18',
-        subtitle: 'Mini Roadmap Exercise & Connect',
-        price: '69',
-        period: 'what to expect:',
-        items: [
-    { description: 'Build a fun 3-item roadmap for a fictional product.' },
-    { description: 'Discuss trade-offs and prioritization challenges.' },
-    { description: 'Boost creativity while refining strategy skills.' },
-    { description: 'Engage PMs of all levels in collaborative thinking.' },
-    { description: 'Encourages networking with problem-solving discussions.' },
-    { description: 'Fosters a sense of community through shared exercises.' },
-  ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
-        },
-
-      },
-      {
-        title: 'April 22',
-        subtitle: 'Product Tear-Down & Connect',
-        price: 199,
-        period: 'what to expect:',
-        items: [
-    { description: 'Analyze product strengths and weaknesses.' },
-    { description: 'Collaborate on feature improvements.' },
-    { description: 'Discuss prioritization and user experience.' },
-    { description: 'Open to all levels to build insights together.' },
-    { description: 'Great opportunity for networking and idea-sharing.' },
-    { description: 'Strengthens PM community through hands-on learning.' },
-  ],
-        callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
-        },
+        type: 'email',
+        name: 'email',
+        label: 'Email',
       },
     ]}
-  />
-  <!-- Features3 Widget  
+    textarea={{
+      label: 'Message',
+    }}
+    disclaimer={{
+      label:
+        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+    }}
 
-  <Features3
-    title="Price-related features"
-    subtitle="Discover the advantages of choosing our plans"
-    columns={2}
+    description="Our team will review your message and get back to you as soon as possible. Thank you for reaching out!"
+  />
+
+  <!-- Features2 Widget 
+
+  <Features2
+    title="We are here to help!"
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
-        icon: 'tabler:stairs',
+        title: 'General support',
+        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
       },
       {
-        title: 'Transparent Pricing',
-        description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
-        icon: 'tabler:flip-vertical',
+        title: 'Contact sales',
+        description:
+          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
       },
       {
-        title: 'Secure Payment Methods',
-        description: 'Secure payment gateways to protect your financial information during transactions.',
-        icon: 'tabler:shield-lock',
+        title: 'Technical support',
+        description:
+          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
       },
       {
-        title: 'Instant Access',
-        description: `Immediate access to your chosen plan's features and templates upon subscription.`,
-        icon: 'tabler:accessible',
-      },
-      {
-        title: 'Upgrade Value',
-        description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
-        icon: 'tabler:chevrons-up',
-      },
-      {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
+        title: 'Phone',
+        description: '+1 (234) 567-890',
         icon: 'tabler:headset',
       },
-    ]}
-    classes={{ container: 'max-w-5xl' }}
-  />
- ******************* -->
-  <!-- Steps Widget  
-
-  <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
-    isReversed={true}
-    items={[
       {
-        title: 'Explore plans',
-        icon: 'tabler:number-1',
+        title: 'Email',
+        description: 'contact@support.com',
+        icon: 'tabler:mail',
       },
       {
-        title: 'Select a plan',
-        icon: 'tabler:number-2',
-      },
-      {
-        title: 'Sign Up / Log In',
-        icon: 'tabler:number-3',
-      },
-      {
-        title: 'Review order',
-        icon: 'tabler:number-4',
-      },
-      {
-        title: 'Enter payment details',
-        icon: 'tabler:number-5',
-      },
-      {
-        title: 'Confirmation',
-        icon: 'tabler:number-6',
-      },
-      {
-        title: 'Download and start using the template(s)',
-        icon: 'tabler:number-7',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
-  />
- ******************* -->
-  <!-- FAQs Widget   
-
-  <FAQs
-    title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
-    columns={1}
-    items={[
-      {
-        title: 'Do the plans come with customer support?',
-        description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
-      },
-      {
-        title: 'Is there a trial period for the different plans?',
-        description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
-      },
-      {
-        title: 'Can I switch between plans?',
-        description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
-      },
-      {
-        title: 'What payment methods do you accept?',
-        description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
-      },
-      {
-        title: 'Are there any hidden fees beyond the displayed cost?',
-        description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+        title: 'Location',
+        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        icon: 'tabler:map-pin',
       },
     ]}
   />
-******************* -->
-  <!-- CallToAction Widget   
-
-  <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get started now',
-        href: '/',
-      },
-    ]}
-  />
-  ******************* -->
+  ************** -->
 </Layout>

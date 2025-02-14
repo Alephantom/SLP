@@ -9,5 +9,8 @@
     }
   },
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist/"]
+  "exclude": ["dist/",
+  "src/pages/astrowind-template-in-depth.mdx",
+  "src/pages/pricing.astro",
+  "src/pages/services.astro"]
 }
