@@ -1,29 +1,39 @@
 ---
-import Layout from '~/layouts/Layout.astro';
-import { getHomePermalink } from '~/utils/permalinks';
+import Layout from '~/layouts/PageLayout.astro';
 
-const title = `Thank You!`;
+import Hero2 from '~/components/widgets/Hero2.astro';
+
+
+const metadata = {
+  title: 'SaaS Landing Page',
+};
 ---
-<Layout metadata={{ title }}>
-  <section class="flex items-center h-full p-16">
-    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
-      <div class="max-w-md text-center">
-        <h2 class="mb-8 font-bold text-9xl">
-          <span class="sr-only">Thanks</span>
-          <span class="text-primary">😊</span>
-        </h2>
-        <p class="text-3xl font-semibold md:text-3xl">Thank you for reaching out!</p>
-        <p class="mt-4 mb-8 text-lg text-muted dark:text-slate-400">
-          Your message is important to us. Just like managing a product backlog, we'll prioritize and address your input to ensure continuous improvement and innovation.
-        </p>
-        <a rel="noopener noreferrer" href={getHomePermalink()} class="btn ml-4">
-          Back to homepage
-        </a>
-        <a rel="noopener noreferrer" href="/contact" class="btn ml-4 bg-accent text-white">
-          Send another message
-        </a>
-      </div>
-    </div>
-  </section>
+
+<Layout metadata={metadata}>
+
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Success!"
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Go Home', href: '#' },
+      { text: 'Write another email', href: '#contact' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552508744-1696d4464960?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',      
+      alt: 'Photo by Drew Beamer on Unsplash',
+    }}
+  >
+    <Fragment slot="title">
+     Your message is important to us.
+
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Just like managing a product backlog, we'll prioritize and address your input to ensure continuous improvement and innovation.
+    </Fragment>
+  </Hero2>
+
 </Layout>
 
