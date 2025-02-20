@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 
 const metadata = {
   title: 'Contact',
@@ -56,5 +57,44 @@ const metadata = {
       </div>  
     </div>
   </div>
-
+  <Features2
+  title="We would love to hear from you!"
+  items={[
+    {
+      title: 'Monthly Round Tables',
+      description: `Join our monthly meetup to connect with like-minded professionals, share insights, and grow together. Don't miss this opportunity to expand your network!`,
+      callToAction: {
+            target: '_blank',
+            text: 'REGISTER HERE!',
+            href: 'https://lu.ma/sheleadsproduct.tech',
+            variant: 'link',
+          },
+      icon: 'tabler:star',
+    },
+    {
+      title: 'Join our Community',
+      description:
+        'Get updates on upcoming events, share insights, and grow alongside a supportive community.',
+        callToAction: {
+            target: '_blank',
+            text: 'DROP US A MESSAGE',
+            href: 'https://chat.whatsapp.com/C8F0FTQXYL97QxOAqxRrkW',
+            variant: 'link',
+          },
+        icon: 'tabler:brand-whatsapp',
+      },
+    {
+      title: 'Follow us on LinkedIn',
+      description:
+      'Stay updated on our latest events, connect with an inspiring and uplifting community, and meet fellow Product Managers.',
+      callToAction: {
+            target: '_blank',
+            text: 'JOIN US ON LINKEDIN!',
+            href: 'https://www.linkedin.com/company/she-leads-product/',
+            variant: 'link',
+          },
+        icon: 'tabler:brand-linkedin',
+      },
+  ]}
+  />
 </Layout>

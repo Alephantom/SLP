@@ -7,7 +7,7 @@ export const headerData = {
   links: [
     {
       text: 'Home',
-      href: '#',
+      href: '/',
     //   // links: [
     //   //   {
     //   //     text: 'SaaS',
@@ -77,20 +77,20 @@ export const headerData = {
     // },
 
 
-    {
-      text: 'About',
-      href: getPermalink('/about'),
-      // links: [
-      //   {
-      //     text: 'What do we do?',
-      //     href: getPermalink('/about'),
-      //   },
-      //   {
-      //     text: 'Product Management Bootcamp',
-      //     href: getPermalink('/category/projects-pm-bootcamp'),
-      //   },
-      // ],
-    },
+    // {
+    //   text: 'About',
+    //   href: getPermalink('/about'),
+    //   // links: [
+    //   //   {
+    //   //     text: 'What do we do?',
+    //   //     href: getPermalink('/about'),
+    //   //   },
+    //   //   {
+    //   //     text: 'Product Management Bootcamp',
+    //   //     href: getPermalink('/category/projects-pm-bootcamp'),
+    //   //   },
+    //   // ],
+    // },
     // {
     //   text: 'Blog',
     //   href: getBlogPermalink(),
