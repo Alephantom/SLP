@@ -29,10 +29,10 @@ const { language, textDirection } = I18N;
 <html lang={language} dir={textDirection} class="2xl:text-[20px]">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script is:inline src="https://www.googletagmanager.com/gtag/js?id=G-07YL2P1C7L"></script>
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-07YL2P1C7L"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
-      function gtag(...args) {
+      function gtag() {
         dataLayer.push(...args);
       }
       gtag('js', new Date());
