@@ -15,9 +15,9 @@ metadata:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: She Leads Product
     images:
-      - url: '~/assets/images/8652549.jpg'
+      - url: '~/assets/images/logoslpbignobblue.png'
         width: 1200
         height: 628
     type: website
