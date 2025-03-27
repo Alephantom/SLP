@@ -77,9 +77,9 @@ export const headerData = {
     // },
 
 
-    // {
-    //   text: 'About',
-    //   href: getPermalink('/about'),
+    {
+      text: 'Partners',
+      href: getPermalink('/partners'),
     //   // links: [
     //   //   {
     //   //     text: 'What do we do?',
@@ -90,7 +90,7 @@ export const headerData = {
     //   //     href: getPermalink('/category/projects-pm-bootcamp'),
     //   //   },
     //   // ],
-    // },
+    },
     // {
     //   text: 'Blog',
     //   href: getBlogPermalink(),
