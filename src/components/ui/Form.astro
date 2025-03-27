@@ -6,8 +6,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
 ---
 
 <form>
-  action="https://formspree.io/f/mdkawwbd"
-  method="POST"
+  action="https://formspree.io/f/mdkawwbd" method="POST"
   {
     inputs &&
       inputs.map(
@@ -20,7 +19,6 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
                 </label>
               )}
               <input
-              
                 type={type}
                 name={name}
                 id={name}
