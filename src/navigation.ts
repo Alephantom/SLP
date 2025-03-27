@@ -1,6 +1,7 @@
-import { getPermalink, 
-// getBlogPermalink, 
-  // getAsset 
+import {
+  getPermalink,
+  // getBlogPermalink,
+  // getAsset
 } from './utils/permalinks';
 
 export const headerData = {
@@ -8,24 +9,24 @@ export const headerData = {
     {
       text: 'Home',
       href: '/',
-    //   // links: [
-    //   //   {
-    //   //     text: 'SaaS',
-    //   //     href: getPermalink('/homes/saas'),
-    //   //   },
-    //   //   {
-    //   //     text: 'Startup',
-    //   //     href: getPermalink('/homes/startup'),
-    //   //   },
-    //   //   {
-    //   //     text: 'Mobile App',
-    //   //     href: getPermalink('/homes/mobile-app'),
-    //   //   },
-    //   //   {
-    //   //     text: 'Personal',
-    //   //     href: getPermalink('/homes/personal'),
-    //   //   },
-    //   // ],
+      //   // links: [
+      //   //   {
+      //   //     text: 'SaaS',
+      //   //     href: getPermalink('/homes/saas'),
+      //   //   },
+      //   //   {
+      //   //     text: 'Startup',
+      //   //     href: getPermalink('/homes/startup'),
+      //   //   },
+      //   //   {
+      //   //     text: 'Mobile App',
+      //   //     href: getPermalink('/homes/mobile-app'),
+      //   //   },
+      //   //   {
+      //   //     text: 'Personal',
+      //   //     href: getPermalink('/homes/personal'),
+      //   //   },
+      //   // ],
     },
     // {
     //   text: 'About',
@@ -76,20 +77,19 @@ export const headerData = {
     //   ],
     // },
 
-
     {
       text: 'Partners',
       href: getPermalink('/partners'),
-    //   // links: [
-    //   //   {
-    //   //     text: 'What do we do?',
-    //   //     href: getPermalink('/about'),
-    //   //   },
-    //   //   {
-    //   //     text: 'Product Management Bootcamp',
-    //   //     href: getPermalink('/category/projects-pm-bootcamp'),
-    //   //   },
-    //   // ],
+      //   // links: [
+      //   //   {
+      //   //     text: 'What do we do?',
+      //   //     href: getPermalink('/about'),
+      //   //   },
+      //   //   {
+      //   //     text: 'Product Management Bootcamp',
+      //   //     href: getPermalink('/category/projects-pm-bootcamp'),
+      //   //   },
+      //   // ],
     },
     // {
     //   text: 'Blog',
@@ -111,13 +111,7 @@ export const headerData = {
     //   // ],
     // },
 
-    
-    {
-      text: 'Contact',
-      href: getPermalink('/contact'),   
-    },
-
-
+    { text: 'Contact', href: getPermalink('/contact') },
 
     // {
     //   text: 'Pages',
@@ -189,7 +183,7 @@ export const headerData = {
     //     },
     //   ],
     // },
-    
+
     // {
     //   text: 'Widgets',
     //   href: '#',

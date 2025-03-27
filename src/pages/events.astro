@@ -6,45 +6,36 @@ import Hero from '~/components/widgets/Hero.astro';
 // import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
-const metadata = {
-  title: 'About us',
-};
+const metadata = { title: 'About us' };
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    tagline="Save the date"
-  
-  >
+  <Hero tagline="Save the date">
     <Fragment slot="title">
-      Wednesday, April 02 | 7:30 PM  <br />
+      Wednesday, April 02 | 7:30 PM <br />
       <span class="text-accent dark:text-white highlight"> SLP March Meet-up</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Join us for the next SheLeadsProduct.tech Round Table—a space for women in product to connect, learn, and grow together! 🚀 This month, we’ll dive into key challenges, share insights, and hear from inspiring PMs. Whether you’re breaking into product or leveling up, join the conversation!
-    <br >
-    <br >
-    <a
-    href="https://lu.ma/event/evt-n9CX3rWe54IhY8H"      
-    class="luma-checkout--button"
-      data-luma-action="checkout"
-      data-luma-event-id="evt-n9CX3rWe54IhY8H"
+      Join us for the next SheLeadsProduct.tech Round Table—a space for women in product to connect, learn, and grow
+      together! 🚀 This month, we’ll dive into key challenges, share insights, and hear from inspiring PMs. Whether
+      you’re breaking into product or leveling up, join the conversation!
+      <br />
+      <br />
+      <a
+        href="https://lu.ma/event/evt-n9CX3rWe54IhY8H"
+        class="luma-checkout--button"
+        data-luma-action="checkout"
+        data-luma-event-id="evt-n9CX3rWe54IhY8H"
       >
-      Register for Event
-    </a>
-    
-    <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
-  </Fragment>
-      </Hero>
-  
+        Register for Event
+      </a>
 
+      <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+    </Fragment>
+  </Hero>
 
   <!-- Stats Widget ****************** -->
-
-
-
-
 </Layout>

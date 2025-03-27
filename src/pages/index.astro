@@ -11,309 +11,305 @@ import Features3 from '~/components/widgets/Features3.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 
-
-const metadata = {
-  title: 'She Leads Product',
-  ignoreTitleTemplate: true,
-};
+const metadata = { title: 'She Leads Product', ignoreTitleTemplate: true };
 ---
 
 <Layout metadata={metadata}>
-
-
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
     tagline="The Future of Tech is Female"
-    image={{
-      src: '~/assets/images/11528259.jpg',
-      alt: 'papercut image designed by Freepik',
-    }}
+    image={{ src: '~/assets/images/11528259.jpg', alt: 'papercut image designed by Freepik' }}
   >
-  <Fragment slot="title">
-    She Leads Product: <br /> A Community for <span class="text-accent dark:text-white highlight"
-      >Women in Product</span>
-    <br />
-  </Fragment>
-  
-  <Fragment slot="subtitle">
-    <span class="hidden sm:inline">
-      Empowering women to lead, innovate, and make a difference in the tech industry.</span
-    >
-    Join us to connect, grow, and shape the future of product management together.
-  </Fragment>
+    <Fragment slot="title">
+      She Leads Product: <br /> A Community for <span class="text-accent dark:text-white highlight"
+        >Women in Product</span
+      >
+      <br />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Empowering women to lead, innovate, and make a difference in the tech industry.</span
+      >
+      Join us to connect, grow, and shape the future of product management together.
+    </Fragment>
   </Hero2>
-  
-
-
-
 
   <!-- Features Widget *************** -->
 
   <Features
-  id="Elevate & Empower"
-  tagline="Elevate & Empower"
-  title="Women Driving Change"
-  subtitle="A vibrant community and platform designed to empower women in product management to learn, grow, and lead with confidence."
-  items={[
-    {
-      title: 'Monthly Round Tables',
-      description:
-        'Engage in monthly discussions with women in product management at all career stages to exchange ideas, learn, and empower each other.',
-      icon: 'tabler:circle',
-    },
-    // {
-    //   title: 'Showcase Your Work',
-    //   description:
-    //     'A platform where you can present your projects, achievements, and passions, gaining recognition and visibility beyond your workplace.',
-    //   icon: 'tabler:award',
-    // },
-    // {
-    //   title: 'Tech News & Insights',
-    //   description:
-    //     'Stay informed with our blog featuring the latest in tech innovations, product management strategies, and essential tools.',
-    //   icon: 'tabler:news',
-    // },
-    {
-      title: 'Continuous Learning',
-      description:
-        'Grow together with a community that fosters lifelong learning, collaboration, and skill development for every stage of your journey.',
-      icon: 'tabler:school',
-    },
-    {
-      title: 'Empowerment & Support',
-      description:
-        'Be part of a network that celebrates resilience, collaboration, and the achievements of women in tech.',
-      icon: 'tabler:heart',
-    },
-    {
-      title: 'Shaping the Future of Tech',
-      description:
-        'Join a movement where women lead the way in creating innovative, inclusive, and impactful products.',
-      icon: 'tabler:rocket',
-    },
-  ]}
-/>
+    id="Elevate & Empower"
+    tagline="Elevate & Empower"
+    title="Women Driving Change"
+    subtitle="A vibrant community and platform designed to empower women in product management to learn, grow, and lead with confidence."
+    items={[
+      {
+        title: 'Monthly Round Tables',
+        description:
+          'Engage in monthly discussions with women in product management at all career stages to exchange ideas, learn, and empower each other.',
+        icon: 'tabler:circle',
+      },
+      // {
+      //   title: 'Showcase Your Work',
+      //   description:
+      //     'A platform where you can present your projects, achievements, and passions, gaining recognition and visibility beyond your workplace.',
+      //   icon: 'tabler:award',
+      // },
+      // {
+      //   title: 'Tech News & Insights',
+      //   description:
+      //     'Stay informed with our blog featuring the latest in tech innovations, product management strategies, and essential tools.',
+      //   icon: 'tabler:news',
+      // },
+      {
+        title: 'Continuous Learning',
+        description:
+          'Grow together with a community that fosters lifelong learning, collaboration, and skill development for every stage of your journey.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Empowerment & Support',
+        description:
+          'Be part of a network that celebrates resilience, collaboration, and the achievements of women in tech.',
+        icon: 'tabler:heart',
+      },
+      {
+        title: 'Shaping the Future of Tech',
+        description:
+          'Join a movement where women lead the way in creating innovative, inclusive, and impactful products.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  />
 
   <!-- Note Widget ******************* -->
-<Note />
+  <Note />
 
-<Hero
-tagline="Save the date"
+  <Hero tagline="Save the date">
+    <Fragment slot="title">
+      Wednesday, April 02 | 7:30 PM <br />
+      <span class="text-accent dark:text-white highlight"> SLP March Meet-up</span>
+    </Fragment>
 
->
-<Fragment slot="title">
-  Wednesday, April 02 | 7:30 PM  <br />
-  <span class="text-accent dark:text-white highlight"> SLP March Meet-up</span>
-</Fragment>
+    <Fragment slot="subtitle">
+      Join us for the next SheLeadsProduct.tech Round Table—a space for women in product to connect, learn, and grow
+      together! 🚀 This month, we’ll dive into key challenges, share insights, and hear from inspiring PMs. Whether
+      you’re breaking into product or leveling up, join the conversation!
+      <br />
+      <br />
+      <a
+        href="https://lu.ma/event/evt-n9CX3rWe54IhY8H"
+        class="luma-checkout--button"
+        data-luma-action="checkout"
+        data-luma-event-id="evt-n9CX3rWe54IhY8H"
+      >
+        Register for Event
+      </a>
 
-<Fragment slot="subtitle">
-  Join us for the next SheLeadsProduct.tech Round Table—a space for women in product to connect, learn, and grow together! 🚀 This month, we’ll dive into key challenges, share insights, and hear from inspiring PMs. Whether you’re breaking into product or leveling up, join the conversation!
-<br >
-<br >
-<a
-href="https://lu.ma/event/evt-n9CX3rWe54IhY8H"      
-class="luma-checkout--button"
-  data-luma-action="checkout"
-  data-luma-event-id="evt-n9CX3rWe54IhY8H"
-  >
-  Register for Event
-</a>
-
-<script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
-</Fragment>
+      <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+    </Fragment>
   </Hero>
 
-
   <Hero
-  tagline="What's the Mission?"
-  image={{
-    src: '~/assets/images/11409110.jpg',
-    alt: 'papercut image designed by Freepik',
-  }}
->
-  <Fragment slot="title">
-    Empowering Women in Product Management <br />
-    <span class="text-accent dark:text-white highlight"> Together, We Build the Future</span>
-  </Fragment>
+    tagline="What's the Mission?"
+    image={{ src: '~/assets/images/11409110.jpg', alt: 'papercut image designed by Freepik' }}
+  >
+    <Fragment slot="title">
+      Empowering Women in Product Management <br />
+      <span class="text-accent dark:text-white highlight"> Together, We Build the Future</span>
+    </Fragment>
 
-  <Fragment slot="subtitle">
-    Women make up only 26% of the tech workforce globally, and just 14% hold leadership positions in STEM. This
-    underrepresentation highlights the need for initiatives that amplify women's voices, showcase their work, and create
-    a supportive community. <strong>She Leads Product</strong> exists to empower women to make their achievements visible,
-    inspire others, and pave the way for future generations. Join us in breaking barriers and reshaping the face of
-    tech.
-  </Fragment>
-</Hero>
+    <Fragment slot="subtitle">
+      Women make up only 26% of the tech workforce globally, and just 14% hold leadership positions in STEM. This
+      underrepresentation highlights the need for initiatives that amplify women's voices, showcase their work, and
+      create a supportive community. <strong>She Leads Product</strong> exists to empower women to make their achievements
+      visible, inspire others, and pave the way for future generations. Join us in breaking barriers and reshaping the face
+      of tech.
+    </Fragment>
+  </Hero>
 
-<!-- Stats Widget ****************** -->
+  <!-- Stats Widget ****************** -->
 
-<Stats
-  title="Why She Leads Product Matters"
-  stats={[
-    { title: 'Women in Tech', amount: '26%' },
-    { title: 'Women in STEM Leadership', amount: '14%' },
-    { title: 'Global Gender Pay Gap in STEM', amount: '16%' },
-    { title: 'Women Inventors', amount: '10%' },
-  ]}
-/>
+  <Stats
+    title="Why She Leads Product Matters"
+    stats={[
+      { title: 'Women in Tech', amount: '26%' },
+      { title: 'Women in STEM Leadership', amount: '14%' },
+      { title: 'Global Gender Pay Gap in STEM', amount: '16%' },
+      { title: 'Women Inventors', amount: '10%' },
+    ]}
+  />
 
-<!-- Features3 Widget ************** -->
+  <!-- Features3 Widget ************** -->
 
-<Features3
-  columns={3}
-  isAfterContent={true}
-  items={[
-    {
-      title: 'Visibility',
-      description:
-        'By showcasing the work of women in product management, we shine a spotlight on achievements that inspire and break stereotypes.',
-      icon: 'tabler:eye',
-    },
-    {
-      title: 'Empowerment',
-      description:
-        'Creating a space where women feel supported, valued, and encouraged to share their skills and ideas.',
-      icon: 'tabler:heart',
-    },
-    {
-      title: 'Collaboration',
-      description:
-        'Building a network of professionals who exchange ideas, mentor each other, and foster innovation in product management.',
-      icon: 'tabler:users',
-    },
-    {
-      title: 'Advocacy',
-      description:
-        'Driving awareness about the challenges women face in tech and pushing for change through community initiatives.',
-      icon: 'tabler:user',
-    },
-    {
-      title: 'Skill Development',
-      description:
-        'Providing resources, workshops, and opportunities for women to continuously grow and thrive in their careers.',
-      icon: 'tabler:school',
-    },
-    {
-      title: 'Recognition',
-      description:
-        'Highlighting contributions of women in tech to ensure their work gets the credit it deserves.',
-      icon: 'tabler:award',
-    },
-  ]}
+  <Features3
+    columns={3}
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Visibility',
+        description:
+          'By showcasing the work of women in product management, we shine a spotlight on achievements that inspire and break stereotypes.',
+        icon: 'tabler:eye',
+      },
+      {
+        title: 'Empowerment',
+        description:
+          'Creating a space where women feel supported, valued, and encouraged to share their skills and ideas.',
+        icon: 'tabler:heart',
+      },
+      {
+        title: 'Collaboration',
+        description:
+          'Building a network of professionals who exchange ideas, mentor each other, and foster innovation in product management.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Advocacy',
+        description:
+          'Driving awareness about the challenges women face in tech and pushing for change through community initiatives.',
+        icon: 'tabler:user',
+      },
+      {
+        title: 'Skill Development',
+        description:
+          'Providing resources, workshops, and opportunities for women to continuously grow and thrive in their careers.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Recognition',
+        description: 'Highlighting contributions of women in tech to ensure their work gets the credit it deserves.',
+        icon: 'tabler:award',
+      },
+    ]}
+  />
 
-/>
+  <!-- Steps2 Widget ****************** -->
 
-<!-- Steps2 Widget ****************** -->
+  <Steps2
+    title="Our Values"
+    subtitle="At She Leads Product, we are driven by values that foster inclusion, innovation, and empowerment."
+    items={[
+      {
+        title: 'Community Support',
+        description:
+          'Creating a network where women uplift and learn from each other, fostering growth and mutual success.',
+      },
+      {
+        title: 'Breaking Barriers',
+        description: 'Challenging stereotypes and advocating for equitable representation in STEM and tech industries.',
+      },
+      {
+        title: 'Celebrating Achievements',
+        description: 'Acknowledging and promoting the incredible contributions women make in product management.',
+      },
+    ]}
+  />
 
-<Steps2
-  title="Our Values"
-  subtitle="At She Leads Product, we are driven by values that foster inclusion, innovation, and empowerment."
-  items={[
-    {
-      title: 'Community Support',
-      description:
-        'Creating a network where women uplift and learn from each other, fostering growth and mutual success.',
-    },
-    {
-      title: 'Breaking Barriers',
-      description:
-        'Challenging stereotypes and advocating for equitable representation in STEM and tech industries.',
-    },
-    {
-      title: 'Celebrating Achievements',
-      description:
-        'Acknowledging and promoting the incredible contributions women make in product management.',
-    },
-  ]}
-/>
+  <HeroText tagline="Thoughts, Ideas, Inspirations?" title="Drop us a message today!" />
+  <div class="container mx-auto">
+    <div
+      class="flex flex-col max-w-xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8 w-full"
+    >
+      <div class="text-center">
+        <h1 class="my-3 text-3xl font-semibold text-primary dark:text-pink-400">Let`s Connect!</h1>
+        <p class="text-muted dark:text-gray-400">Fill up the form below to send us a message.</p>
+      </div>
+      <div class="m-7">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="80468abd-9dfd-4db0-8125-b812f7f9ed2a" />
+          <input type="hidden" name="redirect" value="https://sheleadsproduct.tech/thankyou" />
+          <input type="hidden" name="subject" value="New Submission from SheLeadsProduct" />
+          <input type="checkbox" name="botcheck" id="" style="display: none;" />
 
-<HeroText tagline='Thoughts, Ideas, Inspirations?' title='Drop us a message today!'/>
-<div class="container mx-auto">
-  <div class="flex flex-col max-w-xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8 w-full">      
-    <div class="text-center">
-      <h1 class="my-3 text-3xl font-semibold text-primary dark:text-pink-400">
-        Let`s Connect!
-      </h1>
-      <p class="text-muted dark:text-gray-400">
-        Fill up the form below to send us a message.
-      </p>
-    </div>
-    <div class="m-7">
-      <form action="https://api.web3forms.com/submit" method="POST" id="form">
-        <input type="hidden" name="access_key" value="80468abd-9dfd-4db0-8125-b812f7f9ed2a" />
-        <input type="hidden" name="redirect" value="https://sheleadsproduct.tech/thankyou">
-        <input type="hidden" name="subject" value="New Submission from SheLeadsProduct" />
-        <input type="checkbox" name="botcheck" id="" style="display: none;" />
-
-        <div class="mb-6">
-          <label for="name" class="block mb-2 text-base text-muted dark:text-pink-400">Name</label>
-          <input type="text" name="name" id="name" placeholder="Chris Doe" required class="w-full px-3 py-2 placeholder-grey-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-grey-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
-        </div>
-        <div class="mb-6">
-          <label for="email" class="block mb-2 text-base text-muted dark:text-pink-400">Email Address</label>
-          <input type="email" name="email" id="email" placeholder="you@mail.com" required class="w-full px-3 py-2 placeholder-grey-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-grey-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
-        </div>
-        <!-- <div class="mb-6">
+          <div class="mb-6">
+            <label for="name" class="block mb-2 text-base text-muted dark:text-pink-400">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Chris Doe"
+              required
+              class="w-full px-3 py-2 placeholder-grey-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-grey-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+            />
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block mb-2 text-base text-muted dark:text-pink-400">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="you@mail.com"
+              required
+              class="w-full px-3 py-2 placeholder-grey-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-grey-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+            />
+          </div>
+          <!-- <div class="mb-6">
           <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone Number</label>
           <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
         </div> -->
-        <div class="mb-6">
-          <label for="message" class="block mb-2 text-base  text-muted dark:text-pink-400">Your Message</label>
+          <div class="mb-6">
+            <label for="message" class="block mb-2 text-base text-muted dark:text-pink-400">Your Message</label>
 
-          <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-grey-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-grey-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
-        </div>
-        <div class="mb-6">
-          <button type="submit" class="btn-quaternary w-full">Send Message</button>
-        </div>
-        
-        <p class="text-sm text-center text-gray-400" id="result">By submitting this contact form, you acknowledge and agree to the collection of your personal information.</p>
-      </form>
+            <textarea
+              rows="5"
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              class="w-full px-3 py-2 placeholder-grey-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-grey-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+              required></textarea>
+          </div>
+          <div class="mb-6">
+            <button type="submit" class="btn-quaternary w-full">Send Message</button>
+          </div>
+
+          <p class="text-sm text-center text-gray-400" id="result">
+            By submitting this contact form, you acknowledge and agree to the collection of your personal information.
+          </p>
+        </form>
+      </div>
+      <div class="text-center"></div>
     </div>
-    <div class="text-center">
-    </div>  
   </div>
-</div>
 
-<Features2
-title="We would love to hear from you!"
-items={[
-  {
-    title: 'Monthly Round Tables',
-    description: `Join our monthly meetup to connect with like-minded professionals, share insights, and grow together. Don't miss this opportunity to expand your network!`,
-    callToAction: {
+  <Features2
+    title="We would love to hear from you!"
+    items={[
+      {
+        title: 'Monthly Round Tables',
+        description: `Join our monthly meetup to connect with like-minded professionals, share insights, and grow together. Don't miss this opportunity to expand your network!`,
+        callToAction: {
           target: '_blank',
           text: 'REGISTER HERE!',
           href: 'https://lu.ma/sheleadsproduct.tech',
           variant: 'link',
         },
-    icon: 'tabler:star',
-  },
-  {
-    title: 'Join our Community',
-    description:
-      'Get updates on upcoming events, share insights, and grow alongside a supportive community.',
-      callToAction: {
+        icon: 'tabler:star',
+      },
+      {
+        title: 'Join our Community',
+        description: 'Get updates on upcoming events, share insights, and grow alongside a supportive community.',
+        callToAction: {
           target: '_blank',
           text: 'DROP US A MESSAGE',
           href: 'https://chat.whatsapp.com/C8F0FTQXYL97QxOAqxRrkW',
           variant: 'link',
         },
-      icon: 'tabler:brand-whatsapp',
-    },
-  {
-    title: 'Follow us on LinkedIn',
-    description:
-    'Stay updated on our latest events, connect with an inspiring and uplifting community, and grow alongside fellow Product Managers. Let´s build, learn, and support each other on this journey!',
-    callToAction: {
+        icon: 'tabler:brand-whatsapp',
+      },
+      {
+        title: 'Follow us on LinkedIn',
+        description:
+          'Stay updated on our latest events, connect with an inspiring and uplifting community, and grow alongside fellow Product Managers. Let´s build, learn, and support each other on this journey!',
+        callToAction: {
           target: '_blank',
           text: 'JOIN US ON LINKEDIN!',
           href: 'https://www.linkedin.com/company/she-leads-product/',
           variant: 'link',
         },
-      icon: 'tabler:brand-linkedin',
-    },
-]}
-/>
-
+        icon: 'tabler:brand-linkedin',
+      },
+    ]}
+  />
 </Layout>

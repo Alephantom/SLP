@@ -6,23 +6,21 @@ import Hero from '~/components/widgets/Hero.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
-const metadata = {
-  title: 'Services',
-};
+const metadata = { title: 'Services' };
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-<Hero
-  tagline="Meet the Team"
-  title="The Women Behind She Leads Product"
-  subtitle="Get to know the inspiring women driving innovation, collaboration, and empowerment in product management. From diverse backgrounds and expertise, our team is united by a shared mission to elevate women in tech and create meaningful impact."
-  actions={[{ variant: 'primary', target: '_self', text: 'Learn More', href: '/about' }]}
-  image={{
-    src: '~/assets/images/abstract-psychedelic-papercut-background.jpg',
-    alt: 'papercut image designed by Freepik',
-  }}
+  <Hero
+    tagline="Meet the Team"
+    title="The Women Behind She Leads Product"
+    subtitle="Get to know the inspiring women driving innovation, collaboration, and empowerment in product management. From diverse backgrounds and expertise, our team is united by a shared mission to elevate women in tech and create meaningful impact."
+    actions={[{ variant: 'primary', target: '_self', text: 'Learn More', href: '/about' }]}
+    image={{
+      src: '~/assets/images/abstract-psychedelic-papercut-background.jpg',
+      alt: 'papercut image designed by Freepik',
+    }}
   />
 
   <!-- Features2 Widget ************** -->
@@ -33,7 +31,7 @@ const metadata = {
     columns={3}
     items={[
       {
-        title: 'Educational', 
+        title: 'Educational',
         description:
           'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
         icon: 'tabler:school',

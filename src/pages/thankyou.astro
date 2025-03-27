@@ -3,15 +3,10 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero2 from '~/components/widgets/Hero2.astro';
 
-
-const metadata = {
-  title: 'SaaS Landing Page',
-};
+const metadata = { title: 'SaaS Landing Page' };
 ---
 
 <Layout metadata={metadata}>
-
-
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
@@ -21,19 +16,15 @@ const metadata = {
       { text: 'Write another email', href: '#contact' },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1552508744-1696d4464960?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',      
+      src: 'https://images.unsplash.com/photo-1552508744-1696d4464960?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       alt: 'Photo by Drew Beamer on Unsplash',
     }}
   >
-    <Fragment slot="title">
-     Your message is important to us.
-
-    </Fragment>
+    <Fragment slot="title"> Your message is important to us. </Fragment>
 
     <Fragment slot="subtitle">
-      Just like managing a product backlog, we'll prioritize and address your input to ensure continuous improvement and innovation.
+      Just like managing a product backlog, we'll prioritize and address your input to ensure continuous improvement and
+      innovation.
     </Fragment>
   </Hero2>
-
 </Layout>
-

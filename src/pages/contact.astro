@@ -3,98 +3,114 @@ import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 
-const metadata = {
-  title: 'Contact',
-};
+const metadata = { title: 'Contact' };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline='Thoughts, Ideas, Inspirations?' title='Drop us a message today!'/>
+  <HeroText tagline="Thoughts, Ideas, Inspirations?" title="Drop us a message today!" />
   <div class="container mx-auto">
-    <div class="flex flex-col max-w-xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8 w-full">      
+    <div
+      class="flex flex-col max-w-xl mx-auto rounded-lg backdrop-blur border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 shadow p-4 sm:p-6 lg:p-8 w-full"
+    >
       <div class="text-center">
-        <h1 class="my-3 text-3xl font-semibold text-primary dark:text-pink-400">
-          Let`s Connect!
-        </h1>
-        <p class="text-muted dark:text-gray-400">
-          Fill up the form below to send us a message.
-        </p>
+        <h1 class="my-3 text-3xl font-semibold text-primary dark:text-pink-400">Let`s Connect!</h1>
+        <p class="text-muted dark:text-gray-400">Fill up the form below to send us a message.</p>
       </div>
       <div class="m-7">
         <form action="https://api.web3forms.com/submit" method="POST" id="form">
           <input type="hidden" name="access_key" value="80468abd-9dfd-4db0-8125-b812f7f9ed2a" />
-          <input type="hidden" name="redirect" value="https://sheleadsproduct.tech/thankyou">
+          <input type="hidden" name="redirect" value="https://sheleadsproduct.tech/thankyou" />
           <input type="hidden" name="subject" value="New Submission from SheLeadsProduct" />
           <input type="checkbox" name="botcheck" id="" style="display: none;" />
 
           <div class="mb-6">
             <label for="name" class="block mb-2 text-base text-muted dark:text-pink-400">Name</label>
-            <input type="text" name="name" id="name" placeholder="Chris Doe" required class="w-full px-3 py-2 placeholder-grey-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-grey-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Chris Doe"
+              required
+              class="w-full px-3 py-2 placeholder-grey-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-grey-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+            />
           </div>
           <div class="mb-6">
             <label for="email" class="block mb-2 text-base text-muted dark:text-pink-400">Email Address</label>
-            <input type="email" name="email" id="email" placeholder="you@mail.com" required class="w-full px-3 py-2 placeholder-grey-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-grey-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="you@mail.com"
+              required
+              class="w-full px-3 py-2 placeholder-grey-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-grey-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+            />
           </div>
           <!-- <div class="mb-6">
             <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone Number</label>
             <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
           </div> -->
           <div class="mb-6">
-            <label for="message" class="block mb-2 text-base  text-muted dark:text-pink-400">Your Message</label>
+            <label for="message" class="block mb-2 text-base text-muted dark:text-pink-400">Your Message</label>
 
-            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-grey-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-grey-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+            <textarea
+              rows="5"
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              class="w-full px-3 py-2 placeholder-grey-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-grey-400 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+              required></textarea>
           </div>
           <div class="mb-6">
             <button type="submit" class="btn-quaternary w-full">Send Message</button>
           </div>
-          
-          <p class="text-sm text-center text-gray-400" id="result">By submitting this contact form, you acknowledge and agree to the collection of your personal information.</p>
+
+          <p class="text-sm text-center text-gray-400" id="result">
+            By submitting this contact form, you acknowledge and agree to the collection of your personal information.
+          </p>
         </form>
       </div>
-      <div class="text-center">
-      </div>  
+      <div class="text-center"></div>
     </div>
   </div>
   <Features2
-  title="We would love to hear from you!"
-  items={[
-    {
-      title: 'Monthly Round Tables',
-      description: `Join our monthly meetup to connect with like-minded professionals, share insights, and grow together. Don't miss this opportunity to expand your network!`,
-      callToAction: {
-            target: '_blank',
-            text: 'REGISTER HERE!',
-            href: 'https://lu.ma/sheleadsproduct.tech',
-            variant: 'link',
-          },
-      icon: 'tabler:star',
-    },
-    {
-      title: 'Join our Community',
-      description:
-        'Get updates on upcoming events, share insights, and grow alongside a supportive community.',
+    title="We would love to hear from you!"
+    items={[
+      {
+        title: 'Monthly Round Tables',
+        description: `Join our monthly meetup to connect with like-minded professionals, share insights, and grow together. Don't miss this opportunity to expand your network!`,
         callToAction: {
-            target: '_blank',
-            text: 'DROP US A MESSAGE',
-            href: 'https://chat.whatsapp.com/C8F0FTQXYL97QxOAqxRrkW',
-            variant: 'link',
-          },
+          target: '_blank',
+          text: 'REGISTER HERE!',
+          href: 'https://lu.ma/sheleadsproduct.tech',
+          variant: 'link',
+        },
+        icon: 'tabler:star',
+      },
+      {
+        title: 'Join our Community',
+        description: 'Get updates on upcoming events, share insights, and grow alongside a supportive community.',
+        callToAction: {
+          target: '_blank',
+          text: 'DROP US A MESSAGE',
+          href: 'https://chat.whatsapp.com/C8F0FTQXYL97QxOAqxRrkW',
+          variant: 'link',
+        },
         icon: 'tabler:brand-whatsapp',
       },
-    {
-      title: 'Follow us on LinkedIn',
-      description:
-      'Stay updated on our latest events, connect with an inspiring and uplifting community, and meet fellow Product Managers.',
-      callToAction: {
-            target: '_blank',
-            text: 'JOIN US ON LINKEDIN!',
-            href: 'https://www.linkedin.com/company/she-leads-product/',
-            variant: 'link',
-          },
+      {
+        title: 'Follow us on LinkedIn',
+        description:
+          'Stay updated on our latest events, connect with an inspiring and uplifting community, and meet fellow Product Managers.',
+        callToAction: {
+          target: '_blank',
+          text: 'JOIN US ON LINKEDIN!',
+          href: 'https://www.linkedin.com/company/she-leads-product/',
+          variant: 'link',
+        },
         icon: 'tabler:brand-linkedin',
       },
-  ]}
+    ]}
   />
 </Layout>
