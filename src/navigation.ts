@@ -77,7 +77,6 @@ export const headerData = {
     //   ],
     // },
 
-
     // {
     //   text: 'Blog',
     //   href: getBlogPermalink(),
