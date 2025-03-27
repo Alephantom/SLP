@@ -1,0 +1,149 @@
+---
+// import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+// import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+// import Testimonials from '~/components/widgets/Testimonials.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = { title: 'Partners' };
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Meet our Partners"
+    title="The Power of Partnerships"
+    subtitle="She Leads Product couldn’t do what we do without the knowledge, wisdom, and support of our incredible partners in crime. On this page, you’ll meet the amazing collaborators who uplift, challenge, and inspire us every step of the way. </br></br><strong>Inspired to partner with us? We’d love to hear from you!</strong>"
+    actions={[{ variant: 'primary', target: '_self', text: 'Contact', href: '/contact' }]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        callToAction: {
+          target: '_blank',
+          text: 'Find out more here',
+
+          href: 'https://femaleproductlead.com/',
+        },
+        icon: 'tabler:wand',
+      },
+    ]}
+    image={{ src: '~/assets/images/tfpl-placeholder.png', alt: 'Features Image' }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Female Product Lead</h3>
+      <h5 class="text-2m tracking-tight dark:text-white sm:text-3m mb-2">
+        We are passionate about ensuring that the Female Product leaders of today and tomorrow are empowered, supported
+        and set up for success in their roles and careers. We now have over 500 members in our private group - so felt
+        it was time to create mechanisms to better serve a community through our LinkedIn page to become more visible
+        and a Slack Community enable better collaborations, connections and partnerships to be formed.
+      </h5>
+      <h5>
+        We are also starting to plan a series of events tailored to empowering the female product leaders of today and
+        tomorrow
+      </h5>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+  <!-- 
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Time Savings',
+        description:
+          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Professional Appearance',
+        description:
+          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Cost-Efficiency',
+        description:
+          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
+        icon: 'tabler:coin',
+      },
+      {
+        title: 'Instant Download',
+        description:
+          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
+        icon: 'tabler:file-download',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Benefits Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
+    </Fragment>
+  </Content> -->
+
+  <!-- Testimonials Widget *********** -->
+  <!-- 
+  <Testimonials
+    title="Words from real customers"
+    testimonials={[
+      {
+        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
+        name: 'Emily Kennedy',
+        job: 'Front-end developer',
+        image: {
+          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+          alt: 'Emily Kennedy Image',
+        },
+      },
+      {
+        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
+        name: 'Sarah Hansen',
+        job: 'Photographer',
+        image: {
+          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Sarah Hansen Image',
+        },
+      },
+      {
+        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
+        name: 'Mark Wilkinson',
+        job: 'Small business owner',
+        image: {
+          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+          alt: 'Mark Wilkinson Image',
+        },
+      },
+    ]}
+    callToAction={{
+      target: '_blank',
+      text: 'More testimonials...',
+      href: 'https://github.com/onwidget/astrowind',
+      icon: 'tabler:chevron-right',
+    }} 
+  />-->
+
+  <!-- CallToAction Widget 
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Start exploring',
+        href: '/',
+      },
+    ]}
+    title="Dive into our template collection"
+    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+  />
+  *********** -->
+</Layout>

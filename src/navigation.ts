@@ -77,20 +77,7 @@ export const headerData = {
     //   ],
     // },
 
-    {
-      text: 'Partners',
-      href: getPermalink('/partners'),
-      //   // links: [
-      //   //   {
-      //   //     text: 'What do we do?',
-      //   //     href: getPermalink('/about'),
-      //   //   },
-      //   //   {
-      //   //     text: 'Product Management Bootcamp',
-      //   //     href: getPermalink('/category/projects-pm-bootcamp'),
-      //   //   },
-      //   // ],
-    },
+
     // {
     //   text: 'Blog',
     //   href: getBlogPermalink(),
@@ -154,6 +141,20 @@ export const headerData = {
     //     },
     //   ],
     // },
+    {
+      text: 'Partners',
+      href: getPermalink('/partners'),
+      //   // links: [
+      //   //   {
+      //   //     text: 'What do we do?',
+      //   //     href: getPermalink('/about'),
+      //   //   },
+      //   //   {
+      //   //     text: 'Product Management Bootcamp',
+      //   //     href: getPermalink('/category/projects-pm-bootcamp'),
+      //   //   },
+      //   // ],
+    },
     // {
     //   text: 'Landing',
     //   links: [
